@@ -14,12 +14,12 @@ export default function MessageMenu() {
 
   const getAllMessages = async () => {
     try {
-      const pagination = {
-        page: 1,
-        size: 10,
-      };
-      const { data } = await Axios.get("/message", { params: pagination });
-      const { counts, messages, totalPages } = data;
+      // const pagination = {
+      //   page: 1,
+      //   size: 10,
+      // };
+      const { data } = await Axios.get("/message");
+      const { counts, messages } = data;
       setMessages(messages);
       setLoading(false);
     } catch (error) {

@@ -26,7 +26,7 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
-.contactsLoader{
+.contactsLoader {
   justify-content: center;
   margin: auto;
   height: 90vh;
@@ -58,10 +58,29 @@
   text-decoration: none;
 }
 
-.contactHeading{
+.contactHeading {
   height: 85px;
   background-color: antiquewhite;
   padding: 25px;
   border-radius: 25px;
   top: 2;
+}
+.createContactDiv {
+  height: 50px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.createContactBtn {
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  margin: 5px;
+  font-weight: bold;
+  
+}
+.createContactBtn:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }

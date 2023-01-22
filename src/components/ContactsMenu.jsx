@@ -27,11 +27,11 @@ export default function ContactsMenu() {
 
   const getAllContacts = async () => {
     try {
-      const pagination = {
-        page: 1,
-        size: 10,
-      };
-      const { data } = await Axios.get("/contact", { params: pagination });
+      // const pagination = {
+      //   page: 1,
+      //   size: 10,
+      // };
+      const { data } = await Axios.get("/contact");
       const { contacts } = data;
       setContacts(contacts);
       setLoading(false);
@@ -46,12 +46,23 @@ export default function ContactsMenu() {
   return (
     <div className="contacts-container">
       <h1 className="contactHeading">Contacts</h1>
+      <div className="createContactDiv">
+        <Link to="/create">
+          <button className="createContactBtn">
+            <p>Create Contact</p>
+          </button>
+        </Link>
+      </div>
       {!isLoading ? (
         <div>
           {contacts.length ? (
             contacts.map((item) => {
               return (
-                <Link key={item._id} to={`${item._id}`} className="link">
+                <Link
+                  key={item._id}
+                  to={`details/${item._id}`}
+                  className="link"
+                >
                   <div className="contact">
                     <div className="avatar">
                       {item.name.first[0]} {item.name.last[0]}

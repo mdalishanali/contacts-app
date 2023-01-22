@@ -10,7 +10,7 @@
 .messageMenu {
   width: 80%;
 }
-@media (max-width: 599px) {
+@media (max-width: 1000px) {
   .container {
     display: flex;
     flex-direction: column;

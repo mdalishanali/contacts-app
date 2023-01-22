@@ -1,0 +1,26 @@
+.createContact {
+  width: 50%;
+  height: 60vh;
+  /* border: 1px solid #000; */
+  margin: auto;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.createContactBtn{
+  height: 45px;
+  font-size: 15px;
+  font-weight: bold;
+}
