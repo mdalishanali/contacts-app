@@ -20,6 +20,7 @@ function ContactDetails() {
 
   const getDetails = async () => {
     try {
+      setLoading(true)
       const { data } = await Axios.get(`/contact/${id}`);
       setData(data);
       setLoading(false);
