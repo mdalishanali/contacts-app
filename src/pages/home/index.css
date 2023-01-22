@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  height: auto;
+  width: 100%;
+}
+.contactMenu {
+  width: 20%;
+  margin-left: 10px;
+}
+.messageMenu {
+  width: 80%;
+}
+@media (max-width: 599px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+  .contactMenu {
+    width: 100%;
+  }
+  .messageMenu {
+    width: 100%;
+  }
+}

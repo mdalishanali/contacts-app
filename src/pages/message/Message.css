@@ -1,0 +1,66 @@
+.sendMessageContainer {
+  width: 60%;
+  height: 70vh;
+  background-color: aliceblue;
+  margin: auto;
+  margin-top: 55px;
+  border-radius: 25px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.messageContent {
+  margin: 50px;
+  text-align: center;
+}
+.sendMessageP {
+  font-size: 45px;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 45px;
+}
+.phoneNumber {
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+.inputWithBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  gap: 25px;
+}
+.inputWithBtn > input {
+  margin-top: 25px;
+  width: 100%;
+  height: 55px;
+  padding: 2px;
+  border-radius: 5px;
+  font-size: 25px;
+  align-items: center;
+  display: flex;
+}
+.inputWithBtn > button {
+  font-size: 20px;
+  height: 50px;
+  outline: none;
+  border: none;
+  width: 300px;
+  font-weight: bolder;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+}
+.loaderElem{
+      margin: auto;
+      height: 50vh;
+      width: 100%;
+      align-items: center;
+      display: flex;
+}

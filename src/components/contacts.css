@@ -1,0 +1,67 @@
+.contacts-container {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 99vh;
+  padding-top: 20px;
+}
+@media (max-width: 599px) {
+  .contacts-container {
+    width: 100%;
+  }
+  .messageMenu {
+    width: 100%;
+  }
+}
+.contact {
+  cursor: pointer;
+  height: 100px;
+  padding: 20px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+.contactsLoader{
+  justify-content: center;
+  margin: auto;
+  height: 90vh;
+  align-items: center;
+  display: flex;
+}
+.contact:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: rgb(19, 81, 205);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 80;
+  font-weight: bolder;
+}
+.nameContainer {
+  font-size: 25px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.link {
+  text-decoration: none;
+}
+
+.contactHeading{
+  height: 85px;
+  background-color: antiquewhite;
+  padding: 25px;
+  border-radius: 25px;
+  top: 2;
+}
